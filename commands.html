@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Draid, Play with the perfect discord bot!">
+    <meta property="og:title" content="Draid | Official Website">
+    <meta property="og:site_name" content="Draid">
+    <meta property="og:description" content="Draid is a discord bot perfect for you!">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
+    <title>Draid | Offical Website</title>
+</head>
+
+<style>
+    html {
+        height: auto;
+    }
+
+    body.v1 {
+        height: 100%;
+        background-color: #1f2226;
+        background-image: linear-gradient(#272c31, #000000);
+        background-repeat: no-repeat;
+        overflow: unset;
+    }
+</style>
+
+<body class='v1' class="back-row-toggle splat-toggle">
+
+    <div>
+        <div class="rain front-row"></div>
+        <div class="rain back-row"></div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-invisible">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src='./img/bot1.png' height='35' width="35" style='margin-bottom: 5px; border-radius: 50%;'
+                    class='d-inline-block'>
+                Draid</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/commands.html">Commands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.com/D986fm9dy3">Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div max-width="100%" class="jumbotron text-center bg-transparent">
+        <h1 style="font-size: 70px;" class="commandstitle">Commands</h1>
+        <p class="lead commandssub">All the commands for Draid.</p>
+        <p class="lead commandssub">() = optional {} = needed</p>
+        <hr>
+        <input id="myInput" type="text" class="searchbox" placeholder="Search">
+        <br>
+        <br>
+        <div max-width="100%" class="border"></div>
+        <br>
+        <div max-width="100%" id="myCmd">
+            <br>
+            <button type="button" class="collapsible">Custom prefix<span> - Changes Draids prefix</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,prefix set</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,prefix set {!}</p>
+            </div>
+            <button type="button" class="collapsible">Help<span> - Shows the commands list</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,help</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,help</p>
+            </div>
+            <button type="button" class="collapsible">Ban<span> - Ban users</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,ban</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,ban {@ItsMateo20#3304} (Not coding)</p>
+            </div>
+            <button type="button" class="collapsible">Bug report<span> - Report a bug</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,breport</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,breport {,help don't work :( pls fix}</p>
+            </div>
+            <button type="button" class="collapsible">Credits<span> - Shows the credits for Draid</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,credits</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,credits</p>
+            </div>
+            <button type="button" class="collapsible">Admin help<span> - Commands for admins only</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,help2</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,help2</p>
+            </div>
+            <button type="button" class="collapsible">Invite<span> - Sends links</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,invite</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,invite</p>
+            </div>
+            <button type="button" class="collapsible">Kicks<span> - Kicks users</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,kick</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,kick {@ItsMateo20#3304} (Not paying for hosting)</p>
+            </div>
+            <button type="button" class="collapsible">Leave<span> - Draid leaves the server and sends a
+                    goodbye</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,leave</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,leave</p>
+            </div>
+            <button type="button" class="collapsible">Heads or Tails<span> - Flips a coin</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,coinflip</p>
+                <p>,cf</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,coinflip</p>
+                <p>,cf</p>
+            </div>
+            <button type="button" class="collapsible">Ping<span> - Shows the ping of Draid </span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,ping</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,paying</p>
+            </div>
+            <button type="button" class="collapsible">Snake game<span> - Starts a game of snake</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,snake</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,snake</p>
+            </div>
+            <button type="button" class="collapsible">Slowmode<span> - Sets the message cooldown for a
+                    channel</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,slowmode</p>
+                <p>,slm</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,slowmode {1000ms}</p>
+                <p>,slm {1000ms}</p>
+            </div>
+            <button type="button" class="collapsible">Spam<span> - Spams a message 5+ times</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,spam</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,spam {I am smart -ItsMateo20#3304}</p>
+            </div>
+            <button type="button" class="collapsible">Unban<span> - Unban users</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,unban</p>
+                <p>,unb</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,unban {630812692659044352}</p>
+                <p>,unb {630812692659044352}</p>
+            </div>
+            <button type="button" class="collapsible">Uptime<span> - Shows how long the bot has been
+                    online</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,uptime</p>
+                <p>,upt</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,uptime</p>
+                <p>,upt</p>
+            </div>
+            <button type="button" class="collapsible">Ticket<span> - Makes a support ticket</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,ticket</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,ticket</p>
+                <p>,ticket channelset {channel id}</p>
+                <p>,ticket roleset {role id}</p>
+                <p>,ticket close</p>
+                <p>,ticket reset</p>
+            </div>
+            <button type="button" class="collapsible">Betamode<span> - To see new commands</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,betamode</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,betamode off</p>
+                <p>,betamode on</p>
+            </div>
+            <button type="button" class="collapsible">Minecraft<span> - Minecraft server status checker</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,minecraft</p>
+                <p>,mc</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,minecraft {play.hypixel.net}</p>
+                <p>,mc {play.hypixel.net}</p>
+            </div>
+            <button type="button" class="collapsible">Notepad<span> - Just like a diary or a notapad (don't worry nobody
+                    will look at it only you)</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,notepad</p>
+                <p>,ntp</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,notepad write {Today was a great day}</p>
+                <p>,ntp write {Today was a bad day}</p>
+                <p>,notepad get</p>
+                <p>,ntp get</p>
+            </div>
+            <button type="button" class="collapsible">Languages<span> - Set the language that you want the bot to be
+                    talking to you</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,lang</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,lang en/pl</p>
+            </div>
+            <button type="button" class="collapsible">Server settings<span> - Set the server settings</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,serversettings</p>
+                <p>,ss</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,serversettings {bad words} {on/off}</p>
+                <p>,ss {bad words} {on/off}</p>
+            </div>
+            <button type="button" class="collapsible">User settings<span> - Set the server settings</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,usersettings</p>
+                <p>,us</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,usersettings {tips} {on/off}</p>
+                <p>,us {tips} {on/off}</p>
+            </div>
+            <button type="button" class="collapsible">Avatar<span> - Sends the mentioned users avatar</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,avatar</p>
+                <p>,av</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,avatar (@ItsMateo20#3304)</p>
+                <p>,av (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Clear<span> - Clears the set amount of messages</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,clear</p>
+                <p>,cl</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,clear 1000</p>
+                <p>,cl 6009</p>
+            </div>
+            <button type="button" class="collapsible">Restart<span> - Restarts the bot</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(25, 76, 245);">Dev team</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>%restart</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>%restart</p>
+            </div>
+            <button type="button" class="collapsible">Rank<span> - Shows the xp and level</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,rank</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,rank</p>
+                <p>,rank (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Reset Rank<span> - Resets levels and xp of the set
+                    user</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,resetrank</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,resetrank</p>
+                <p>,resetrank (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Set level<span> - Sets level of the set user</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,setlevel</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,setlevel 21</p>
+                <p>,setlevel 21 (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Set xp<span> - Sets xp of the set user</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,setxp</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,setxp 21</p>
+                <p>,setxp 21 (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Add xp<span> - Adds xp to the set user</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,addxp</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,addxp 21</p>
+                <p>,addxp 21 (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Add level<span> - Adds levels to the set user</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(242, 44, 232);">Administration</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,addlevel</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,addlevel 21</p>
+                <p>,addxp 21 (@ItsMateo20#3304)</p>
+            </div>
+            <button type="button" class="collapsible">Leaderboard<span> - Sends the leaderboard of the guild that the
+                    command was sent in</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,leaderboard</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,leaderboard</p>
+            </div>
+            <button type="button" class="collapsible">Shop<span> - Shows what things you can buy with levels and
+                    xp</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,shop</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,shop</p>
+            </div>
+            <button type="button" class="collapsible">Inventory<span> - Shows the items that you have bought using
+                    levels and xp</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,inventory</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,inventory</p>
+            </div>
+            <button type="button" class="collapsible">Buy<span> - Buys the item that is set by the id of the item that
+                    is in the shop</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,buy</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,buy 3 [Metal pickaxe]</p>
+            </div>
+            <button type="button" class="collapsible">Dig<span> - Dig for stuff that will auto sell to xp,
+                    levels</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,dig</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,dig</p>
+            </div>
+            <button type="button" class="collapsible">Fish<span> - Fish for fish that will auto sell to xp,
+                    levels</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,fish</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,fish</p>
+            </div>
+            <button type="button" class="collapsible">Hunt<span> - Hunt for animals that will auto sell to xp,
+                    levels</span></button>
+            <div max-width="100%" class="content">
+                <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+                <p style="color: rgb(19, 182, 160);">General</p>
+                <h4 style="color: #cccccc;">Usage:</h4>
+                <p>,hunt</p>
+                <h4 style="color: #cccccc;">Examples:</h4>
+                <p>,hunt</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./styles/search.js"></script>
+<script src="./styles/rain.js"></script>
+
+</html>
