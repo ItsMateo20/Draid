@@ -171,13 +171,16 @@ body.splat-toggle .splat {
     color: #21a6ff !important;
 }
 
-.contact {
-    color: gray;
-    font-size: large;
+.gray {
+    color:rgb(157, 157, 157);
+}
+
+.provide {
+    color:rgb(138, 138, 138);
 }
 
 .info {
-    color: rgb(163, 163, 163);
+    color: rgb(255, 255, 255);
 }
 
 .commandstitle {
